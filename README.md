@@ -30,3 +30,4 @@ d3 = dunkin donuts devos
   - http://d3.artzub.com/wbca/ Similar in the way that we can see the changing of data over time on a geographic map. You also have different options to select to narrow down exactly what you’re looking at. Of course, we will only be observing NYC with our data and our animations wouldn’t look as complex. However, we will have the same functionality of overlaying different characteristics of data alongside each other so users can clearly see more populated with data areas and draw connections.
 
 ![Suppose to be a sketch](https://github.com/dariashifrina/dunkindonutsdevos/blob/master/dddrawing.jpg)
+##### \*Note: oops i forgot to put "race" in the pop-up window - taylor
