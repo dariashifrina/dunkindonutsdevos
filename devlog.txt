@@ -1,0 +1,56 @@
+Team Dunkin Donuts Devos
+
+Dasha Shifrina
+Jasper Cheung
+Leo Liu
+Taylor Wong
+pd 7
+---------------------
+<INSERT_TITLE_HERE>
+
+/////////// Zone of Reflection \\\\\\\\\\\
+------------------------------------------
+OBSTACLES OVERCOME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+wow we so BOSS bc...
+
+UNRESOLVED ISSUES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+blah blah pesky bug...
+
+COOL STUFF LEARNED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+wow! oo!...
+
+
+MID-DEVELOPMENT DESIGN CHANGES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+LESSONS LEARNED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tales of wisdom gained...
+
+||||||||||||||||||||||||||||||||||||||||||
+
+
+
+ ______   ______   __   __   __       ______   _______
+/_____/\ /_____/\ /_/\ /_/\ /_/\     /_____/\ /______/\
+\:::_ \ \\::::_\/_\:\ \\ \ \\:\ \    \:::_ \ \\::::__\/__
+ \:\ \ \ \\:\/___/\\:\ \\ \ \\:\ \    \:\ \ \ \\:\ /____/\
+  \:\ \ \ \\::___\/_\:\_/.:\ \\:\ \____\:\ \ \ \\:\\_  _\/
+   \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \
+    \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/
+==============================================================
+taylorW -- 2018-03-28
+brainstorm, wrote explanation of how to make data come alive, sketch
+
+dashaS -- 2018-03-28
+brainstorm, found data sets, wrote description of data sets, explanation of d3
+
+leoL -- 2018-03-28
+brainstorm, added submod
+
+jasperC -- 2018-03-28
+brainstorm, transcribe doc to readme
