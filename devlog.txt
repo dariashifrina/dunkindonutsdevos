@@ -44,7 +44,7 @@ tales of wisdom gained...
     \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/
 ==============================================================
 taylorW -- 2018-03-28
-brainstorm, wrote explanation of how to make data come alive, sketch
+brainstorm, wrote explanation of how to make data come alive, sketch, devlog
 
 dashaS -- 2018-03-28
 brainstorm, found data sets, wrote description of data sets, explanation of d3
