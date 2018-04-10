@@ -43,6 +43,15 @@ tales of wisdom gained...
    \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \
     \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/
 ==============================================================
+jasperC & leoL --  2018-04-09
+found map for svg, worked on figuring out how to color map and its inclusion as part of the webpage
+
+dashaS --  2018-04-09
+worked on making csv data useful. started working on python script to sort through data to create a smaller/more useful csv file
+
+taylorW --  2018-04-09
+wrote simple index.html file
+
 ddd -- 2018-04-08
 came back from a good break :)
 
