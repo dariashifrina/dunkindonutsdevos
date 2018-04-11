@@ -43,6 +43,8 @@ tales of wisdom gained...
    \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \
     \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/
 ==============================================================
+jasperC -- 2018-04-10
+ya boy got the coloring of the map working on the website, with lots of issues.
 
 dashaS --  2018-04-10
 created python file to read csv, parse through it, and create new csv file with used information. stored in "information.csv"
