@@ -31,3 +31,6 @@ d3 = dunkin donuts devos
 
 ![Suppose to be a sketch](https://github.com/dariashifrina/dunkindonutsdevos/blob/master/dddrawing.jpg)
 ##### \*Note: oops i forgot to put "race" in the pop-up window - taylor
+https://github.com/d3/d3/wiki/Gallery
+https://bl.ocks.org/mbostock/4060606
+https://bl.ocks.org/mbostock/2206590
