@@ -34,3 +34,6 @@ d3 = dunkin donuts devos
 https://github.com/d3/d3/wiki/Gallery
 https://bl.ocks.org/mbostock/4060606
 https://bl.ocks.org/mbostock/2206590
+
+
+how to make a bubble map: https://bost.ocks.org/mike/bubble-map/
