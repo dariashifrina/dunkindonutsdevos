@@ -9,6 +9,15 @@ window.onload = function(){
     console.log(alb);
 
     alb.setAttributeNS(null,"fill","ff2332");
+    var poly = d3.select(svgDoc).selectAll('polygon');
+
+    poly.attr('fill','green');
+    console.log(poly);
+ 
+    
+   
+    
+    
 }
 
 
