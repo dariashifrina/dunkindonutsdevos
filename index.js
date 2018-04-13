@@ -57,7 +57,7 @@ console.log(svg);
 // It's important to add an load event listener to the object,
 // as it will load the svg doc asynchronously
 svg.addEventListener("load",function(){
-    
+
     // get the inner DOM of nymap.svg
     var svgDoc = svg.contentDocument;
     console.log(svgDoc);
@@ -65,6 +65,14 @@ svg.addEventListener("load",function(){
     var alb = svgDoc.getElementById("Albany");
     // add behaviour
     alb.setAttributeNS(null,"fill","ff2332");
-    
+
 }, false);
 */
+
+var slider = document.getElementById("yearRange");
+var output = document.getElementById("year");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
