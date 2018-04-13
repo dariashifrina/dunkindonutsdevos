@@ -1,24 +1,52 @@
 //gottem host on local server
 //$  python -m SimpleHTTPServer
 //port 8000
+
+var svg
+var svgDoc
+var counties
+var paths
+
 window.onload = function(){
-    var svg  = document.getElementById("vimage");
-    var svgDoc = svg.contentDocument;
+    svg  = document.getElementById("vimage");
+    svgDoc = svg.contentDocument;
     console.log(svgDoc);
     var alb = svgDoc.getElementById("Albany");
     console.log(alb);
 
     alb.setAttributeNS(null,"fill","ff2332");
-    var poly = d3.select(svgDoc).selectAll('polygon');
+    var polys = d3.select(svgDoc).selectAll('polygon');
+    var paths = d3.select(svgDoc).selectAll('path');
+    console.log(polys);
+    console.log(paths);
 
-    poly.attr('fill','green');
-    console.log(poly);
- 
-    
-   
-    
-    
+    counties = [polys, paths];
+
+    //counties[0] contains polygon county borders
+    counties[0].attr('fill','green');
+
+    //counties[1] contains county borders that are paths
+    counties[1].attr('fill','orange');
+
+    console.log(counties);
 }
+
+//problem, rest of code runs before window.onload finishes
+console.log(counties);
+//the following line will cause an error because counties is still undefined.
+console.log(counties[0]);
+
+/*
+
+Solution:
+
+Have all setup be done in window.onload
+
+User interactions handled by event listeners AFTER the page has loaded
+
+*/
+
+
 
 
 /*

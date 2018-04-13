@@ -43,6 +43,10 @@ tales of wisdom gained...
    \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \
     \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/
 ==============================================================
+leoL -- 2018-04-10
+solved the issues Jasper ran into, generalized code for both paths and polygons
+more potential future issues from how we solved this issue. Hazards documented, so they can be avoided
+
 jasperC -- 2018-04-10
 ya boy got the coloring of the map working on the website, with lots of issues.
 
