@@ -29,6 +29,22 @@ window.onload = function(){
     counties[1].attr('fill','orange');
 
     console.log(counties);
+
+    var county
+    for each (county in counties[0]){
+	county.addEventListener("click", shade);
+    }
+    for each (county in counties[1]){
+	county.addEventListener("click", shade);
+    }
+}
+
+var shade = function(){
+    /*
+      Get data from data/clean_data.csv
+      Read info from corresponding section
+      Shade the county appropriately
+     */
 }
 
 //problem, rest of code runs before window.onload finishes
@@ -44,29 +60,6 @@ Have all setup be done in window.onload
 
 User interactions handled by event listeners AFTER the page has loaded
 
-*/
-
-
-
-
-/*
-//WORKS SOMETIMES
-var svg  = document.getElementById("vimage");
-console.log(svg);
-
-// It's important to add an load event listener to the object,
-// as it will load the svg doc asynchronously
-svg.addEventListener("load",function(){
-
-    // get the inner DOM of nymap.svg
-    var svgDoc = svg.contentDocument;
-    console.log(svgDoc);
-    // get the inner element by id
-    var alb = svgDoc.getElementById("Albany");
-    // add behaviour
-    alb.setAttributeNS(null,"fill","ff2332");
-
-}, false);
 */
 
 var slider = document.getElementById("yearRange");
