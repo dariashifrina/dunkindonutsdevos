@@ -32,14 +32,14 @@ window.onload = function(){
 
     var county
     for each (county in counties[0]){
-	county.addEventListener("click", shade);
+	county.addEventListener("click", showMore);
     }
     for each (county in counties[1]){
-	county.addEventListener("click", shade);
+	county.addEventListener("click", showMore);
     }
 }
 
-var shade = function(){
+var showMore = function(){
     /*
       Get data from data/clean_data.csv
       Read info from corresponding section

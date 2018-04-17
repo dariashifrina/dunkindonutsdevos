@@ -41,8 +41,12 @@ tales of wisdom gained...
  \:\ \ \ \\:\/___/\\:\ \\ \ \\:\ \    \:\ \ \ \\:\ /____/\
   \:\ \ \ \\::___\/_\:\_/.:\ \\:\ \____\:\ \ \ \\:\\_  _\/
    \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \
-    \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/
+    \____/_/ \_____\/ \___/_/   \_____\/ \_____\/ \_____\/
 ==============================================================
+leoL -- 2018-04-17
+cleaned restaurant inspection data and wrote code to process said data
+started & outlined structure for showing more detailed data
+
 leoL -- 2018-04-10
 solved the issues Jasper ran into, generalized code for both paths and polygons
 more potential future issues from how we solved this issue. Hazards documented, so they can be avoided
