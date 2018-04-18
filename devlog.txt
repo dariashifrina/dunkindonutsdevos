@@ -43,6 +43,10 @@ tales of wisdom gained...
    \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \
     \____/_/ \_____\/ \___/_/   \_____\/ \_____\/ \_____\/
 ==============================================================
+leoL -- 2018-04-18
+a bit more code to further distill the important aspects of the data set
+violation_by_* files contain numbers of violations in *
+
 leoL -- 2018-04-17
 cleaned restaurant inspection data and wrote code to process said data
 started & outlined structure for showing more detailed data
