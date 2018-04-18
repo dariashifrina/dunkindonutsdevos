@@ -5,6 +5,29 @@ d3 = dunkin donuts devos
 
 <img src="https://amedia.britannica.com/700x450/28/23028-004-EBFBC4A3.jpg">
 
+
+### Instructions
+1. After cloning repository, you must first setup a virtual environment;
+```bash
+pip install virtualenv
+virtualenv <name>
+```
+2. Activate your virtualenv;
+```bash
+.<name>/bin/activate
+```
+3. Install flask;
+```bash
+pip install flask
+```
+4. Run in cloned repository;
+
+```bash
+python app.py
+```
+
+5. Follow provided link to access our app! Enjoy!
+
 ### Data Sets
 1.  Individual Income Tax Statistic
     1. https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-2015-zip-code-data-soi
