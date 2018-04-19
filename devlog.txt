@@ -47,6 +47,9 @@ leoL -- 2018-04-18
 a bit more code to further distill the important aspects of the data set
 violation_by_* files contain numbers of violations in *
 
+dashaS --  2018-04-17
+updated readme with instructions to launch
+
 leoL -- 2018-04-17
 cleaned restaurant inspection data and wrote code to process said data
 started & outlined structure for showing more detailed data
