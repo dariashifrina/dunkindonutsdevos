@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+1<!DOCTYPE html>
 
 <html>
   <head>
     <title>New York State Poverty as Determined by Statewide Food Inspection</title>
-    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src='/static/js/boroughs.js'></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -11,6 +12,7 @@
     <!-- Own CSS -->
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/pricing.css">
+    
 
 
   </head>
@@ -21,9 +23,12 @@
         <div class="col-8">
           <h1>New York State Poverty as Determined by Statewide Food Inspection</h1>
           <br>
-          <object id="vimage" type="image/svg+xml" data="static/nymap.svg">
-    	       Your browser does not support SVG
-          </object>
+          <div id="container">
+            <div id="map" class="block">
+              <svg></svg>
+              <p>Use arrow keys to move around</p>
+            </div>
+	  </div>
 
           <div class="slidecontainer">
             <input type="range" min="1960" max="2017" value="1960" class="slider" id="yearRange">
@@ -63,10 +68,6 @@
         </center>
         </div>
       </div>
-
-
-
-
       <br>
       Note: Data aquired from
       <a href="https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-2015-zip-code-data-soi">here</a>
@@ -74,10 +75,9 @@
       <a href="https://catalog.data.gov/dataset/dohmh-new-york-city-restaurant-inspection-results">here</a>
 
     </center>
-
-
-
-    <script src="static/js/index.js"></script>
+    
+    <script src="static/js/plotter.js"></script>
+       
   </body>
 
 </html>
