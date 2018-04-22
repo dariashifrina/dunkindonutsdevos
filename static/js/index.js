@@ -1,7 +1,3 @@
-//gottem host on local server
-//$  python -m SimpleHTTPServer
-//port 8000
-
 var svg = d3.select('svg')
 
 var allPaths
@@ -13,12 +9,13 @@ var clearShading = function(){
 var violationByZipcode = [];
 
 d3.csv("static/data/violation_by_zipcode.csv", function(data){
-    var zip
     data.forEach( function(d){
-	zip = {zipcode: data.zipcode, numberOfViolation: data.number_of_violation}
-	violationByZipcode.push(zip)
+	violationByZipcode[parseInt(d.zipcode)] =  parseInt(d.number_of_violations);
     })
 });
+
+console.log("violation data:");
+console.log(violationByZipcode);
 
 var makeMap = function(){
     allPaths = svg.append('allPaths')
