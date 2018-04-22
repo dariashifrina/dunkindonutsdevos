@@ -43,6 +43,11 @@ tales of wisdom gained...
    \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \
     \____/_/ \_____\/ \___/_/   \_____\/ \_____\/ \_____\/
 ==============================================================
+leoL -- 2018-04-22
+realized that the code for reading data from csv is wrong, fixed
+uploaded zipcode.js to repo, contains coordinate info for zipcode boundaries for map
+    attempt at actually drawing the map met with defeat :'(
+
 leoL -- 2018-04-18
 a bit more code to further distill the important aspects of the data set
 violation_by_* files contain numbers of violations in *
