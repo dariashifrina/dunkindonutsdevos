@@ -1,7 +1,6 @@
 var svg = d3.select('svg')
 
-var allPaths
-
+var allPaths;
 var clearShading = function(){
     
 }
@@ -21,19 +20,20 @@ var makeMap = function(){
     allPaths = svg.append('allPaths')
 
     albersProjection = d3.geoAlbers()
-        .scale(60000 + 10000*(zoomLevel)**2)
+        .scale(60000 + 10000*(1)**2)
         .rotate([74.0060, 0])
         .center([0, 40.7128])
-        .translate([panX, panY]);
+        .translate([0, 0]);
 
     geoPath = d3.geoPath().projection(albersProjection);
-    
-    g.selectAll('path')
+    /*
+    allPaths.selectAll('path')
 	.data(zipcode.feature) //zipcode data here
 	.enter()
 	.append('path')
+	.attr('fill', '#fff')
         .attr('stroke', '#000')
-	.attr('fill-opacity', function(d){
+	.attr('fill-opacity', function(d) {
 	    var numViolations = violationByZipcode[d.properties.postalcode]
 	    //jasper don't know postal code = zip code
 	    //postal code is the property name in zipcode map JSON
@@ -42,8 +42,11 @@ var makeMap = function(){
             }
             return numViolations/10050
 	})
+
+    */
 }
 
+makeMap();
 var slider = document.getElementById("yearRange");
 var output = document.getElementById("year");
 output.innerHTML = slider.value;
