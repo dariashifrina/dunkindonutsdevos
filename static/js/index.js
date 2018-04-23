@@ -2,7 +2,7 @@ var svg = d3.select('svg')
     .attr('width', 700)
     .attr('height', 600)
 var allPaths;
-var clearShading = function(){
+var clearShading = function(){ //might need this to clear map to redraw with different yearly data
     
 }
 
@@ -12,6 +12,8 @@ violationByYear[2014] = [];
 violationByYear[2015] = [];
 violationByYear[2016] = [];
 violationByYear[2017] = [];
+
+//Use `violationByYear[year][zipcode]` to access number of violations in a zipcode zone for a given year
 
 var loadData = function(){
     d3.csv("static/data/violation_by_zipcode.csv", function(data){
