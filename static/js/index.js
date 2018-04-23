@@ -34,9 +34,8 @@ var makeMap = function(){
 	.attr('fill', '#ffffff')
         .attr('stroke', '#000000')
 	.attr('fill-opacity', function(d) {
-	    var zipcode = d.properties.postalcode
-	    console.log(zipcode)
-	    zipcode = zipcode.toString();
+	    var zipcode = d.properties.postalcode;
+	    console.log(zipcode);
 	    console.log(violationByZipcode[zipcode] / 10050)
 	    return violationByZipcode[zipcode] / 10050
 	    //jasper don't know postal code = zip code
