@@ -1,5 +1,6 @@
 var svg = d3.select('svg')
-
+    .attr('width', 700)
+    .attr('height', 600)
 var allPaths;
 var clearShading = function(){
     
@@ -26,7 +27,7 @@ var makeMap = function(){
         .scale(70000)
         .rotate([74.0060, 0])
         .center([0, 40.7128])
-	.translate([0, 0]);
+	.translate([350, 300]);
 
     geoPath = d3.geoPath().projection(albersProjection);
     
