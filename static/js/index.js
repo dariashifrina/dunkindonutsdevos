@@ -7,11 +7,13 @@ var clearShading = function(){
 
 var violationByZipcode = [];
 
-d3.csv("static/data/violation_by_zipcode.csv", function(data){
-    data.forEach( function(d){
-	violationByZipcode[parseInt(d.zipcode)] =  parseInt(d.number_of_violations);
-    })
-});
+var loadData = function(){
+    d3.csv("static/data/violation_by_zipcode.csv", function(data){
+	data.forEach( function(d){
+	    violationByZipcode[parseInt(d.zipcode)] =  parseInt(d.number_of_violations);
+	})
+    });
+}
 
 console.log("violation data:");
 console.log(violationByZipcode);
@@ -47,6 +49,7 @@ var makeMap = function(){
 	.attr('d', geoPath);
 }
 
+loadData();
 setTimeout(function(){
     console.log(violationByZipcode[11220]);
     makeMap();
