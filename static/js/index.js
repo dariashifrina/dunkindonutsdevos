@@ -8,6 +8,10 @@ var clearShading = function(){
 
 var violationByZipcode = [];
 var violationByYear = [];
+violationByYear[2014] = [];
+violationByYear[2015] = [];
+violationByYear[2016] = [];
+violationByYear[2017] = [];
 
 var loadData = function(){
     d3.csv("static/data/violation_by_zipcode.csv", function(data){
@@ -17,22 +21,22 @@ var loadData = function(){
     });
     d3.csv("static/data/2014.csv", function(data){
 	data.forEach(function(d){
-	    violationByYear[parseInt(d.zipcode)] = parseInt(d.number_of_violations);
+	    violationByYear[2014][parseInt(d.zipcode)] = parseInt(d.number_of_violations);
 	});
     });
     d3.csv("static/data/2015.csv", function(data){
 	data.forEach(function(d){
-	    violationByYear[parseInt(d.zipcode)] = parseInt(d.number_of_violations);
+	    violationByYear[2015][parseInt(d.zipcode)] = parseInt(d.number_of_violations);
 	});
     });
     d3.csv("static/data/2016.csv", function(data){
 	data.forEach(function(d){
-	    violationByYear[parseInt(d.zipcode)] = parseInt(d.number_of_violations);
+	    violationByYear[2016][parseInt(d.zipcode)] = parseInt(d.number_of_violations);
 	});
     });
     d3.csv("static/data/2017.csv", function(data){
 	data.forEach(function(d){
-	    violationByYear[parseInt(d.zipcode)] = parseInt(d.number_of_violations);
+	    violationByYear[2017][parseInt(d.zipcode)] = parseInt(d.number_of_violations);
 	});
     });
 } //data for 2012, 2013, and 2018 are not included because of their extremely small size/incompleteness
