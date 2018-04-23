@@ -9,7 +9,7 @@ var violationByZipcode = [];
 
 d3.csv("static/data/violation_by_zipcode.csv", function(data){
     data.forEach( function(d){
-	violationByZipcode[parseInt(d.zipcode)] =  parseInt(d.number_of_violations);
+	violationByZipcode[d.zipcode] =  parseInt(d.number_of_violations);
     })
 });
 
@@ -34,14 +34,13 @@ var makeMap = function(){
 	.attr('fill', '#ffffff')
         .attr('stroke', '#000000')
 	.attr('fill-opacity', function(d) {
-	    var numViolations = violationByZipcode[d.properties.postalcode]
+	    var zipcode = d.properties.postalcode
+	    console.log(zipcode)
+	    zipcode = zipcode.toString();
+	    console.log(violationByZipcode[zipcode] / 10050)
+	    return violationByZipcode[zipcode] / 10050
 	    //jasper don't know postal code = zip code
 	    //postal code is the property name in zipcode map JSON
-            if (!numViolations) {
-                numViolations = 0;
-            }
-	    console.log(numViolations/10050)
-            return numViolations/10050
 	})
 	.attr('d', geoPath);
 }
