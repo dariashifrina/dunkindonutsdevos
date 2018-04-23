@@ -9,12 +9,13 @@ var violationByZipcode = [];
 
 d3.csv("static/data/violation_by_zipcode.csv", function(data){
     data.forEach( function(d){
-	violationByZipcode[d.zipcode] =  parseInt(d.number_of_violations);
+	violationByZipcode[parseInt(d.zipcode)] =  parseInt(d.number_of_violations);
     })
 });
 
 console.log("violation data:");
 console.log(violationByZipcode);
+console.log(violationByZipcode[11220]);
 
 var makeMap = function(){
     allPaths = svg.append('g')
@@ -31,20 +32,25 @@ var makeMap = function(){
 	.data(zipcode.features) //zipcode data here
 	.enter()
 	.append('path')
-	.attr('fill', '#ffffff')
+	.attr('fill', '#ff0000')
         .attr('stroke', '#000000')
 	.attr('fill-opacity', function(d) {
-	    var zipcode = d.properties.postalcode;
-	    console.log(zipcode);
-	    console.log(violationByZipcode[zipcode] / 10050)
-	    return violationByZipcode[zipcode] / 10050
-	    //jasper don't know postal code = zip code
-	    //postal code is the property name in zipcode map JSON
+	    var zipcode = parseInt(d.properties.postalcode);
+	    var numViolations = violationByZipcode[zipcode];
+	    if (!numViolations){
+		//numViolations = 0;
+	    }
+	    console.log(violationByZipcode[10118])
+	    console.log(numViolations/1005);
+	    return numViolations/10050;
 	})
 	.attr('d', geoPath);
 }
 
-makeMap();
+setTimeout(function(){
+    console.log(violationByZipcode[11220]);
+    makeMap();
+}, 500)
 var slider = document.getElementById("yearRange");
 var output = document.getElementById("year");
 output.innerHTML = slider.value;
