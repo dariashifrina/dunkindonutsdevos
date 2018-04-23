@@ -43,6 +43,10 @@ tales of wisdom gained...
    \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \
     \____/_/ \_____\/ \___/_/   \_____\/ \_____\/ \_____\/
 ==============================================================
+
+dashaS --  2018-04-22
+updated to show violations by year
+
 leoL -- 2018-04-22 (Later that night)
 map is now drawn and colored according to number of violations in the region
 wrote python code to parse data by year, javascript code to read in those data
