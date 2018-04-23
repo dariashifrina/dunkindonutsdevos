@@ -45,7 +45,7 @@ tales of wisdom gained...
 ==============================================================
 
 taylorW -- 2018-04-22
-worked on popup and did front end 
+worked on popup and did front end/instructions
 
 dashaS --  2018-04-22
 updated to show instructions + violations overall
