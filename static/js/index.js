@@ -93,6 +93,43 @@ var makeMap = function(){
 	.attr('d', geoPath);
 }
 
+var makeMap2 = function(){
+    clearShading();
+    allPaths = svg.append('g')
+
+    albersProjection = d3.geoAlbers()
+        .scale(70000)
+        .rotate([74.0060, 0])
+        .center([0, 40.7128])
+	.translate([350, 300]);
+
+    geoPath = d3.geoPath().projection(albersProjection);
+    
+    allPaths.selectAll('path')
+	.data(zipcode.features) //zipcode data here
+	.enter()
+	.append('path')
+	.attr('fill', '#ff0000')
+        .attr('stroke', '#000000')
+	.attr('fill-opacity', function(d) {
+	    var zipcode = parseInt(d.properties.postalcode);
+	    var sliderval = parseInt(slider.value);
+	    console.log(sliderval);
+	    //var numViolations = violationByYear[sliderval][zipcode];
+	    console.log(numViolations);
+	    //console.log(numViolations);
+	    var numViolations = violationByZipcode[zipcode];
+	    if (!numViolations){
+		//numViolations = 0;
+	    }
+	    //console.log(violationByZipcode[10118])
+	    //console.log(numViolations/1005);
+	    return numViolations/10050;
+	})
+	.attr('d', geoPath);
+}
+
+
 loadData();
 setTimeout(function(){
     console.log(violationByZipcode[11220]);
