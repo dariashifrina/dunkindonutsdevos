@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>New York State Poverty as Determined by Statewide Food Inspection</title>
+    <title>New York City Food Inspection Violations</title>
     <script src="http://d3js.org/d3.v4.min.js"></script>
     <script src='/static/js/zipcode.js'></script>
 
@@ -11,17 +11,37 @@
     <!-- Own CSS -->
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/pricing.css">
-    
+
 
 
   </head>
 
   <body>
     <center>
+      <!--navbar -->
+
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="">DunkinDonutsDevos</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/">Home</a>
+            <a class="nav-item nav-link" href="/instructions">Instructions and More!</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- end navbar -->
+
+      <main role="main" class="container">
+      <div class="starter-template">
+        <br>
+        <h1 style="border:100px">New York City Food Inspection Violations</h1>
+      </div>
+
+      <br>
       <div class="row">
         <div class="col-8">
-          <h1>New York State Poverty as Determined by Statewide Food Inspection</h1>
-          <br>
+
           <div id="container">
             <div id="map" class="block">
               <svg></svg>
@@ -32,32 +52,32 @@
           <div class="slidecontainer">
             <input type="range" min="2014" max="2017" value="2014" class="slider" id="yearRange">
             <p>Current Year: <span id="year"></span></p>
+            <input type="checkbox" id="yearAll" onclick="makeMap2()"> Show Data from All Years</input>
           </div>
         </div>
 
         <div class="col-sm">
           <center>
-            <br><br><br><br><br><br><br>
           <div class="card mb-4 box-shadow">
             <div class="card-header">
               <h4 class="my-0 font-weight-normal">Instructions + More</h4>
-	      On the side you can see a map of NYC. The more shaded in an area<br> is, the more violations have occurred in that zipcode. By using the slider, you can pick the year to notice any trends over time. If you'd like to view the elapsed data from the given years (2014-2018), you can click the button below.<br>
-	      <input type="checkbox" id="yearAll" onclick="makeMap2()">Show Data from All Years
+	      On the side you can see a map of NYC. The more shaded in an area is, the more violations have occurred in that zipcode. By using the slider, you can pick the year to notice any trends over time. If you'd like to view the elapsed data from the given years (2014-2018), you can click the button below.<br>
+
             </div>
           </div>
         </center>
         </div>
       </div>
       <br>
-      Note: Data aquired from
+      Data aquired from
       <a href="https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-2015-zip-code-data-soi">here</a>
       and
       <a href="https://catalog.data.gov/dataset/dohmh-new-york-city-restaurant-inspection-results">here</a>
 
     </center>
-    
+  </main>
     <script src="static/js/index.js"></script>
-       
+
   </body>
 
 </html>

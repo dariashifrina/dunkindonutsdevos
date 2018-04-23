@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New York State Poverty as Determined by Statewide Food Inspection</title>
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src='/static/js/zipcode.js'></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/pricing.css">
+
+
+
+  </head>
+
+  <body>
+      <!--navbar -->
+
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="/">DunkinDonutsDevos</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/">Home</a>
+            <a class="nav-item nav-link" href="/instructions">Instructions and More!</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- end navbar -->
+
+      <main role="main" class="container">
+      <div class="starter-template">
+        <br>
+        <center>
+        <h1 style="padding-right:50px; padding-left:50px">Instructions and More!</h1><br>
+        </center>
+        <p style="font-size:20px;padding-right:50px; padding-left:50px;">
+          Welcome to <b>New York City Food Inspection Violations</b>
+          by DunkinDonutsDevos. Using the d3 library, we have created a map that displays
+          the density and frequency of health code violations by food establishments in a
+          given zipcode.</a>.
+          <br><br>
+          Based on the number of violations commited, the area on the map defined for that zipcode
+          will be colored in a certain shade of <text style="color:orange;">orange</text>.
+          The stronger the opacity of orange in that area, the higher the number of violations,
+          and vice versa.
+          <br><br>
+          Using the slider, you can scroll through different years in order to display
+          the pattern of food violations in different zipcodes. If you want to see the
+          number of violations over all four years, you can check the box titled,
+          "Show Data from All Years".
+
+        </p>
+      </div>
+
+    </main>
+
+    <script src="static/js/index.js"></script>
+
+  </body>
+
+</html>
