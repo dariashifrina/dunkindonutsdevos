@@ -3,8 +3,15 @@ var svg = d3.select('svg')
     .attr('height', 600)
 var allPaths;
 var clearShading = function(){ //might need this to clear map to redraw with different yearly data
-    
-}
+    allPaths = svg.append('g');
+    allPaths.selectAll('path')
+//	.data(zipcode.features) //zipcode data here
+//	.enter()
+//	.append('path')
+	.attr('fill', '#ffffff')
+        .attr('stroke', '#ffffff')
+	.attr('fill-opacity', '#ffffff')
+};
 
 var violationByZipcode = [];
 var violationByYear = [];
@@ -16,6 +23,7 @@ violationByYear[2017] = [];
 //Use `violationByYear[year][zipcode]` to access number of violations in a zipcode zone for a given year
 
 var loadData = function(){
+    clearShading();
     d3.csv("static/data/violation_by_zipcode.csv", function(data){
 	data.forEach( function(d){
 	    violationByZipcode[parseInt(d.zipcode)] =  parseInt(d.number_of_violations);
@@ -44,10 +52,13 @@ var loadData = function(){
 } //data for 2012, 2013, and 2018 are not included because of their extremely small size/incompleteness
 
 console.log("violation data:");
-console.log(violationByZipcode);
-console.log(violationByZipcode[11220]);
+//console.log(violationByZipcode);
+//console.log(violationByZipcode[11220]);
+console.log("2015:");
+console.log(violationByYear[2015]);
 
 var makeMap = function(){
+    clearShading();
     allPaths = svg.append('g')
 
     albersProjection = d3.geoAlbers()
@@ -66,7 +77,12 @@ var makeMap = function(){
         .attr('stroke', '#000000')
 	.attr('fill-opacity', function(d) {
 	    var zipcode = parseInt(d.properties.postalcode);
-	    var numViolations = violationByZipcode[zipcode];
+	    var sliderval = parseInt(slider.value);
+	    console.log(sliderval);
+	    var numViolations = violationByYear[sliderval][zipcode];
+	    console.log(numViolations);
+	    //console.log(numViolations);
+	    //var numViolations = violationByZipcode[zipcode];
 	    if (!numViolations){
 		//numViolations = 0;
 	    }
@@ -85,6 +101,11 @@ setTimeout(function(){
 var slider = document.getElementById("yearRange");
 var output = document.getElementById("year");
 output.innerHTML = slider.value;
+
+console.log("slider value:");
+console.log(slider.value);
+
+document.getElementById("yearRange").addEventListener("click", makeMap);
 
 slider.oninput = function() {
   output.innerHTML = this.value;
