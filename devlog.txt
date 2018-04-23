@@ -44,6 +44,8 @@ tales of wisdom gained...
     \____/_/ \_____\/ \___/_/   \_____\/ \_____\/ \_____\/
 ==============================================================
 
+taylorW -- 2018-04-22
+worked on popup and did front end 
 
 dashaS --  2018-04-22
 updated to show instructions + violations overall
@@ -63,6 +65,9 @@ leoL -- 2018-04-22
 realized that the code for reading data from csv is wrong, fixed
 uploaded zipcode.js to repo, contains coordinate info for zipcode boundaries for map
     attempt at actually drawing the map met with defeat :'(
+
+taylorW -- 2018-04-19
+worked on front pop ups and slider
 
 leoL -- 2018-04-18
 a bit more code to further distill the important aspects of the data set
