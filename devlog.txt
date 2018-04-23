@@ -44,6 +44,10 @@ tales of wisdom gained...
     \____/_/ \_____\/ \___/_/   \_____\/ \_____\/ \_____\/
 ==============================================================
 
+
+dashaS --  2018-04-22
+updated to show instructions + violations overall
+
 dashaS --  2018-04-22
 updated to show violations by year
 
@@ -51,6 +55,9 @@ leoL -- 2018-04-22 (Later that night)
 map is now drawn and colored according to number of violations in the region
 wrote python code to parse data by year, javascript code to read in those data
 I will now rest, after setting the rest of the squad up to shade regions by year
+
+dashaS --  2018-04-22
+restarted svg in local directory to try to get map to reappear
 
 leoL -- 2018-04-22
 realized that the code for reading data from csv is wrong, fixed
