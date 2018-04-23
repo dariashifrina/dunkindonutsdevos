@@ -17,22 +17,22 @@ console.log("violation data:");
 console.log(violationByZipcode);
 
 var makeMap = function(){
-    allPaths = svg.append('allPaths')
+    allPaths = svg.append('g')
 
     albersProjection = d3.geoAlbers()
-        .scale(60000 + 10000*(1)**2)
+        .scale(70000)
         .rotate([74.0060, 0])
         .center([0, 40.7128])
-        .translate([0, 0]);
+	.translate([0, 0]);
 
     geoPath = d3.geoPath().projection(albersProjection);
-    /*
+    
     allPaths.selectAll('path')
-	.data(zipcode.feature) //zipcode data here
+	.data(zipcode.features) //zipcode data here
 	.enter()
 	.append('path')
-	.attr('fill', '#fff')
-        .attr('stroke', '#000')
+	.attr('fill', '#ffffff')
+        .attr('stroke', '#000000')
 	.attr('fill-opacity', function(d) {
 	    var numViolations = violationByZipcode[d.properties.postalcode]
 	    //jasper don't know postal code = zip code
@@ -40,10 +40,10 @@ var makeMap = function(){
             if (!numViolations) {
                 numViolations = 0;
             }
+	    console.log(numViolations/10050)
             return numViolations/10050
 	})
-
-    */
+	.attr('d', geoPath);
 }
 
 makeMap();
